@@ -5,7 +5,7 @@ const Navbar = () => {
   const github = "https://github.com/johnson-Abiola";
   const linkedln = "https://www.linkedin.com/in/abiola-johnson-2711501b4/";
   const instagram = "https://www.instagram.com/?hl=en";
-  const twitter = "";
+  const twitter = "https://x.com/JohnsonAbiolam2";
   return (
     <div className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
@@ -16,10 +16,16 @@ const Navbar = () => {
         <a href={linkedln} target="_blank" rel="noreferrer">
           <FaLinkedin />
         </a>
+        <a href={github} target="_blank" rel="noreferrer">
+          <FaGithub />
+        </a>
 
-        <FaGithub />
-        <FaInstagram />
-        <FaTwitter />
+        <a href={instagram} target="_blank" rel="noreferrer">
+          <FaInstagram />
+        </a>
+        <a href={twitter} target="_blank" rel="noreferrer">
+          <FaTwitter />
+        </a>
       </div>
     </div>
   );
